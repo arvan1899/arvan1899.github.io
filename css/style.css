@@ -14,8 +14,7 @@ body {
     padding: 0;
 }
 
- body {
-     background-image: url('../images/gambar-pemuda.jpg')
+ 
  }
 /* End Body */
 
@@ -161,7 +160,7 @@ h6 {
 }
 .main-home-one .box-isi,
 .main-home-two .box-isi {
-    height: 140px
+    height: 140px;
 }
 
 /* End Main */
@@ -210,6 +209,10 @@ h6 {
 .menu-sekunder-li {
     list-style: disc;
 }
+.menu-sekunder li a 
+.menu-sekunder p {
+    font-size: 15px;
+}
 
 .menu-sekunder-one,
 .menu-sekunder-two,
@@ -217,14 +220,13 @@ h6 {
     float: left;
 }
 .menu-sekunder-one {
-    width: 40%
+    width: 40%;
 }
-.menu-sekunder-two {
-    width: 40%
-}
+.menu-sekunder-two,
 .menu-sekunder-three {
-    width: 40%
+    width: 30%;
 }
+
 /* End New Sekunder */
 
 /* Start Effect */
