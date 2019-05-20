@@ -1,21 +1,22 @@
 /* Start Font */
-<style>
 @import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
-</style>
+
 /* End Font */
 
 /* Start Body */
 body {
-    color : #234565e;
+    color : #234565;
     font-family: Arvo, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
     margin:0;
     padding: 0;
+    background-color: whitesmoke;
 }
 
+    
  
- }
+
 /* End Body */
 
 /* Start Debug */
@@ -66,40 +67,61 @@ a:active {
 /* End Anchor / Hyperlink */
 
 /* Start Menu Primer */
-.menu-primer ul {
-    background-color:rgb(255, 0, 0);
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 
-        0 3px 5px -1px rgba(0,0,0,.2),
-        0 6px 10px 0 rgba(0,0,0,.14),
-        0 1px 10px 0 rgba(0,0,0,.12);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+.snip1310 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
 }
-.menu-primer li {
-    border-right: 1px solid #d1d5da;
-    display: inline-block;
+.snip1310 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s linear;
+  transition: all 0.35s linear;
 }
-
-.menu-primer a{
-    color: #ffffff;
-    font-size: 16px;
-    display: inline-block;
-    letter-spacing: 1px;
-    padding: 10px 20px;
-    text-transform: uppercase;
+.snip1310 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  overflow: hidden;
 }
-
-.menu-primer a:hover {
-    background-color: #f7f7f7;
-    color: #000000;
-    text-decoration: none;
+.snip1310 a {
+  padding: 0.3em 0.8em;
+  backface-visibility: hidden;
+  color: #bfbfbf;
+  display: block;
+  line-height: 2em;
+  padding: 0 1em;
+  position: relative;
+  text-decoration: none;
 }
-
-.menu-primer .active {
-    background-color: #ffffff
-    color:  #333333;
-    text-decoration: none;
-
+.snip1310 a:after {
+  -webkit-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+  color: #c0392b;
+  content: attr(data-hover);
+  top: 0;
+  line-height: 2em;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.snip1310 li:hover a,
+.snip1310 li.current a {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  color: transparent;
+}
+.snip1310 li:hover a:after,
+.snip1310 li.current a:after {
+  opacity: 1;
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
 }
 
 /* End Menu Primer */
@@ -160,7 +182,11 @@ h6 {
 }
 .main-home-one .box-isi,
 .main-home-two .box-isi {
-    height: 140px;
+    height: 200px;
+}
+.home-center {
+    margin: auto;
+    float: none;
 }
 
 /* End Main */
@@ -171,7 +197,7 @@ h6 {
     border : 1px solid #d1d5da;
     border-radius: 3px 3px 0 0;
     margin : 0;
-    padding: :10px 20px;
+    padding: 10px 20px;
     text-transform: uppercase;
 }
 .box-heading h4 {
@@ -180,11 +206,11 @@ h6 {
 }
 
 .box-isi {
-    background-color: aliceblue
+    background-color: aliceblue;
     border : 1px solid #eaecef;
     border-top: 0;
     margin : 0;
-    padding: :10px 20px;
+    padding:10px 20px;
 }
 /* End Box */
 
@@ -317,3 +343,298 @@ figure.snip1524.hover figcaption {
 }
 
 /* End Effect */
+
+/* Start Effect  */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1559 {
+  font-family: 'Lato', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #2B2B2B;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.snip1559 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1559 .profile-image {
+  padding: 15% 10% 0;
+}
+
+.snip1559 .profile-image img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+  border-radius: 50%;
+  max-width: 40%;
+}
+
+.snip1559 figcaption {
+  padding: 5% 10% 15%;
+}
+
+.snip1559 h3 {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 3px 0;
+}
+
+.snip1559 h5 {
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.snip1559 .icons i {
+  color: #999;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 1.5em;
+}
+
+.snip1559 .icons i:hover {
+  color: #555;
+}
+
+.snip1559 .icons i a {
+  text-decoration: none;
+}
+
+/*End Effect */
+
+/* Start testimoni */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1192 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: none !important;
+}
+figure.snip1192 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip1192 img {
+  max-width: 100%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+}
+figure.snip1192 blockquote {
+  margin: 0;
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: #fafafa;
+  padding: 30px 50px 65px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0 0 -50px;
+  line-height: 1.6em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1192 blockquote:before,
+figure.snip1192 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1192 blockquote:before {
+  top: 35px;
+  left: 20px;
+}
+figure.snip1192 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 35px;
+}
+figure.snip1192 .author {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+figure.snip1192 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+figure.snip1192 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
+}
+/* End testimoni */
+
+
+/* Start layanan */
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800);
+.snip1265 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px 10px 10px;
+}
+.snip1265 .plan {
+  margin: 0;
+  width: 25%;
+  position: relative;
+  float: left;
+  background-color: #262626;
+  border: 1px solid #1e1e1e;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.snip1265 .plan:hover,
+.snip1265 .plan.hover {
+  background-color: #1c1c1c;
+}
+.snip1265 .plan:hover i,
+.snip1265 .plan.hover i {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.snip1265 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.snip1265 header {
+  position: relative;
+  padding: 20px 10px;
+}
+.snip1265 header i {
+  font-size: 56px;
+  margin: 0 15px;
+  color: #f39c12;
+  display: inline-block;
+  float: left;
+}
+.snip1265 .plan-title {
+  top: 0;
+  font-weight: 800;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.snip1265 .plan-cost {
+  margin: 0;
+  opacity: 0.2;
+}
+.snip1265 .plan-price {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.3em;
+}
+.snip1265 .plan-type {
+  opacity: 0.8;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+.snip1265 .plan-features {
+  padding: 0;
+  margin: 0 0 40px;
+  text-align: center;
+  list-style: outside none none;
+  font-size: 0.8em;
+  text-align: left;
+}
+.snip1265 .plan-features li {
+  padding: 5px 5%;
+  font-weight: 500;
+  opacity: 0.5;
+  border-left: 5px solid #f39c12;
+  margin: 2px 20px;
+}
+.snip1265 .plan-select {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.snip1265 .plan-select a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 20px;
+  margin: 20px;
+  border-radius: 40px;
+  font-size: 0.75em;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #f39c12;
+}
+.snip1265 .plan-select a:hover {
+  background-color: #262626;
+}
+.snip1265 .featured {
+  margin-top: -10px;
+  background-color: #262626;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.snip1265 .featured .plan-select a {
+  margin: 30px 20px;
+}
+@media only screen and (max-width: 767px) {
+  .snip1265 .plan {
+    width: 50%;
+  }
+  .snip1265 .plan-title,
+  .snip1265 .plan-select a {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .snip1265 .plan-select a,
+  .snip1265 .featured .plan-select a {
+    margin: 20px;
+  }
+  .snip1265 .featured {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .snip1265 .plan {
+    width: 100%;
+  }
+}
+
+/* End layanan */
